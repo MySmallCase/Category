@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NSString+Extension.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *tel = @"as13871329097";
+    NSLog(@"%d",[tel validatePassword]);
+    
 }
 
 - (void)didReceiveMemoryWarning {
